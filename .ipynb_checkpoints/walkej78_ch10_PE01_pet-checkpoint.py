@@ -7,16 +7,16 @@ class Pet:
         self.__age = age
 
     # set_name This method assigns a value to the __name field.
-    def set_name(name):
-        name = self.__name
+    def set_name(self, name):
+        self.__name = name
         
     # set_animal_type This method assigns a value to the __animal_type field.
-    def set_animal_type(animal_type):
-        animal_type = self.__animal_type
+    def set_animal_type(self, animal_type):
+        self.__animal_type = animal_type
         
     # set_age This method assigns a value to the __age field.
-    def set_age(age):
-        age = self.__age
+    def set_age(self, age):
+        self.__age = age
         
     # get_name This method assigns a value to the __name field.
     def get_name(self):
