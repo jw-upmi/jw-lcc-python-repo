@@ -1,7 +1,7 @@
 # define pet class for walkej78_ch10_PE01_pet.py
 class Pet:
     # initialize private methods
-    def __init__(self):
+    def __init__(self, name, animal_type, age):
         self.__name = name
         self.__animal_type = animal_type
         self.__age = age
