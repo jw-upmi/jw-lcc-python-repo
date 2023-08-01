@@ -28,9 +28,9 @@ class ProductionWorker:
     # initialize ProductionWorker subclass
     def __init__(self, employee_name, employee_number, shift_number, hr_pay_rate):
         # define shift_number attribute
-        self.__shift_number = shift_number
+        self.__shift_number = int(shift_number)
         # define hr_pay_rate attribute to represent hourly pay rate
-        self.__hr_pay_rate
+        self.__hr_pay_rate = float(hr_pay_rate)
     
     # define set_shift_number for two integers (1 and 2) to represent the day shift as 1 and the night shift as 2.
     def set_shift_number(self, shift_number):
