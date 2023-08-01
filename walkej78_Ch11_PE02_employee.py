@@ -1,4 +1,4 @@
-# class file to walkej78_Ch11_PE01_employee.py
+# class file to walkej78_Ch11_PE02_employee.py
 class Employee:
     # initialize Employee class
     def __init__(self, employee_name, employee_number):
@@ -55,12 +55,18 @@ class ShiftSupervisor(Employee):
     # initialize ShiftSupervisor subclass
     def __init__(self, annual_salary, annual_production_bonus):
         # call the superclass __init__ method
-        Employee.__init__(self, employee_name, employee_number)
+        Employee.__init__(self, shift_number, employee_name, employee_number)
+        # define shift_number attribute
+        self.__shift_number = int(shift_number)
         # define annual_salary attribute
         self.__annual_salary = float(annual_salary)
         # define annual_production_bonus attribute
         self.__annual_production_bonus = float(annual_production_bonus)
         
+    # define set_shift_number for two integers (1 and 2) to represent the day shift as 1 and the night shift as 2.
+    def set_shift_number(self, shift_number):
+        self.__shift_number = int(shift_number)
+
     # define set_annual_salary to set annual salary for shift supervisor
     def set_annual_salary(self, annual_salary):
         self.__annual_salary = float(annual_salary)
@@ -68,6 +74,10 @@ class ShiftSupervisor(Employee):
     # definte set_annual_production_bonus to set annual production bonus for shift supervisor
     def set_annual_production_bonus(self, annual_production_bonus):
         self.__annual_production_bonus = float(annual_production_bonus)
+
+    # definte get_shift_number to retrieve an employee's shift number
+    def get_shift_number(self):
+        return self.__shift_number
     
     # definte get_annual_salary to retrieve annual salary for shift supervisor
     def get_annual_salary(self):
