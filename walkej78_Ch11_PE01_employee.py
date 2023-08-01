@@ -17,14 +17,14 @@ class Employee:
     
     # define get_employee_name to retrieve an employee's name
     def get_employee_name(self):
-        return self._employee_name
+        return self.__employee_name
     
     # define get_employee_number to retrieve an employee's number
     def get_employee_number(self):
         return self.__employee_number
 
 # create subclass ProductionWorker
-class ProductionWorker:
+class ProductionWorker(Employee):
     # initialize ProductionWorker subclass
     def __init__(self, employee_name, employee_number, shift_number, hr_pay_rate):
         # define shift_number attribute
@@ -37,8 +37,8 @@ class ProductionWorker:
         self.__shift_number = int(shift_number)
         
     # define set_hr_pay_rate to set an employee's hourly pay rate
-    def set_hr_pay_rate(self, rate):
-        self.__hr_pay_rate = float(rate)
+    def set_hr_pay_rate(self, hr_pay_rate):
+        self.__hr_pay_rate = float(hr_pay_rate)
         
     # definte get_shift_number to retrieve an employee's shift number
     def get_shift_number(self):
@@ -47,3 +47,4 @@ class ProductionWorker:
     # define get_hr_pay_rate to retrieve an emplployee's hourly pay rate
     def get_hr_pay_rate(self):
         return self.__hr_pay_rate
+    
