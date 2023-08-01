@@ -27,6 +27,8 @@ class Employee:
 class ProductionWorker(Employee):
     # initialize ProductionWorker subclass
     def __init__(self, employee_name, employee_number, shift_number, hr_pay_rate):
+        # call the superclass __init__ method
+        Employee.__init__(self, employee_name, employee_number)
         # define shift_number attribute
         self.__shift_number = int(shift_number)
         # define hr_pay_rate attribute to represent hourly pay rate
