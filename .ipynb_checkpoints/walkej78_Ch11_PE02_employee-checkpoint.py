@@ -53,7 +53,7 @@ class ProductionWorker(Employee):
 # create subclass ShiftSupervisor
 class ShiftSupervisor(Employee):
     # initialize ShiftSupervisor subclass
-    def __init__(self, annual_salary, annual_production_bonus):
+    def __init__(self, shift_number, annual_salary, annual_production_bonus):
         # call the superclass __init__ method
         Employee.__init__(self, shift_number, employee_name, employee_number)
         # define shift_number attribute
